@@ -9,17 +9,17 @@
 - 총 데이터 수: 4000개
 - 컬럼 수: 9개
 
-| 번호 | 속성명         | 의미              |
-|------|-------------|------------------|
-| 1    | A_id        | 과일 ID           |
-| 2    | Size        | 크기              |
-| 3    | Weight      | 무게              |
-| 4    | Sweetness   | 단맛              |
-| 5    | Crunchiness | 바삭함             |
-| 6    | Juiciness   | 육즙              |
-| 7    | Ripeness    | 숙성도             |
-| 8    | Acidity     | 산도              |
-| 9    | Quality     | 품질              |
+| 컬럼 이름    | 자료형    | 한글 이름    | 타입        | 역할      | 설명                      |
+|--------------|-----------|--------------|-------------|-----------|---------------------------|
+| A_id         | float64   | 과일 ID      | 수치형      | Feature   | 고유 식별자               |
+| Size         | float64   | 크기         | 수치형      | Feature   | 과일의 크기               |
+| Weight       | float64   | 무게         | 수치형      | Feature   | 과일의 무게               |
+| Sweetness    | float64   | 당도         | 수치형      | Feature   | 과일의 단맛 정도          |
+| Crunchiness  | float64   | 아삭함       | 수치형      | Feature   | 과일의 아삭한 정도        |
+| Juiciness    | float64   | 과즙 함량    | 수치형      | Feature   | 과일의 즙이 많은 정도     |
+| Ripeness     | float64   | 숙성도       | 수치형      | Feature   | 과일의 익은 정도          |
+| Acidity      | object    | 산도         | 범주형      | Feature   | 과일의 신맛 정도 (Low, Medium 등) |
+| Quality      | object    | 품질         | 범주형      | Target    | 과일의 품질 평가 (Good, Bad 등)   |
 
 ## 3. 기술 통계요약
 
@@ -46,6 +46,15 @@ $$
 ![로지스틱회귀_특징_가중치](./docs/로지스틱회귀_특징_가중치.png)
 
 ## 6. 파생 변수 및 전처리
+
+### 파생변수
+
+![파생변수](./docs/파생변수.png)
+
+> 양의 상관관계가 있는 `size`, `sweetness`, `juiciness`를 묶어 <br>
+> 새로운 요소 `taste score`로 만들어 `quality`와의 관계를 확인
+
+### 전처리
 `A_id` → 고유번호 삭제
 
 ## 7. 요약 및 인사이트
