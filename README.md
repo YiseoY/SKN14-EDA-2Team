@@ -9,17 +9,17 @@
 - 총 데이터 수: 4000개
 - 컬럼 수: 9개
 
-| 컬럼 이름    | 자료형    | 한글 이름    | 타입        | 역할      | 설명                      |
-|--------------|-----------|--------------|-------------|-----------|---------------------------|
-| A_id         | float64   | 과일 ID      | 수치형      | Feature   | 고유 식별자               |
-| Size         | float64   | 크기         | 수치형      | Feature   | 과일의 크기               |
-| Weight       | float64   | 무게         | 수치형      | Feature   | 과일의 무게               |
-| Sweetness    | float64   | 당도         | 수치형      | Feature   | 과일의 단맛 정도          |
-| Crunchiness  | float64   | 아삭함       | 수치형      | Feature   | 과일의 아삭한 정도        |
-| Juiciness    | float64   | 과즙 함량    | 수치형      | Feature   | 과일의 즙이 많은 정도     |
-| Ripeness     | float64   | 숙성도       | 수치형      | Feature   | 과일의 익은 정도          |
-| Acidity      | object    | 산도         | 범주형      | Feature   | 과일의 신맛 정도 (Low, Medium 등) |
-| Quality      | object    | 품질         | 범주형      | Target    | 과일의 품질 평가 (Good, Bad 등)   |
+| 컬럼 이름     | 자료형    | 한글 이름    | 타입           | 설명                      |
+|--------------|-----------|-------------|-----------|--------------------------|
+| A_id         | float64   | 과일 ID      | 수치형      | 고유 식별자                |
+| Size         | float64   | 크기         | 수치형      | 과일의 크기                |
+| Weight       | float64   | 무게         | 수치형      | 과일의 무게                |
+| Sweetness    | float64   | 당도         | 수치형      | 과일의 단맛 정도            |
+| Crunchiness  | float64   | 아삭함       | 수치형       | 과일의 아삭한 정도          |
+| Juiciness    | float64   | 과즙 함량     | 수치형       | 과일의 즙이 많은 정도       |
+| Ripeness     | float64   | 숙성도       | 수치형       | 과일의 익은 정도            |
+| Acidity      | float64   | 산도         | 수치형       | 과일의 신맛 정도               |
+| Quality      | object    | 품질         | 범주형       | 과일의 품질 평가 (Good, Bad)   |
 
 ## 3. 기술 통계요약
 
