@@ -66,7 +66,7 @@ After
 
 ## 5. 변수 간 관계 분석
 
-![](./docs/숙성도_품질_바이올린차트.png)
+![](./docs/Ripeness_Q_Chart.png)
 
 > ## 숙성도(Ripeness)와 품질(Quality) 간의 관계 분석
 >
